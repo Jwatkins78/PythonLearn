@@ -1,7 +1,8 @@
-def factorial(n):
-	if n == 0:
-		return 1
-	else:
-		return n * factorial(n-1)
-n=int(input("Input a number to define the factorial : ") )
-print(factorial(n) )
+def main():
+    n = eval(input("Enter a whole number: "))
+    fact = 1
+    for factor in range(n,1,-1):
+        fact = fact * factor
+    print("The factorial of", n, "is", fact)
+
+main()
